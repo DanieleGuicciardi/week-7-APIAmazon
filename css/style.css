@@ -1,0 +1,91 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  border-bottom: 1px solid grey;
+}
+
+#single-row {
+  width: 90%;
+  margin-top: 5em;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.topB {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 25px;
+}
+
+body > div {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+main .card img {
+  border-radius: 25px 25px 0 0;
+}
+
+main .card:hover {
+  transform: scale(1.05);
+}
+
+.exit {
+  animation: slide-out-blurred-top 1.85s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+    both;
+}
+
+@keyframes slide-out-blurred-top {
+  0% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 0%;
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+.bi {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
